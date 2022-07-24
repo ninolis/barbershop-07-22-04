@@ -1,14 +1,63 @@
 body {
-  /* background-color: pink; */
   font-family: 'Open Sans', sans-serif;
-  /* font-family: 'Raleway', sans-serif; */
 }
 
-/* p {
-  font-family: 'Open Sans', sans-serif;
-  color: green;
+.link {
+  text-decoration: none; /* without underline */
+}
+
+.list {
+  list-style: none;
+}
+
+.header {
+  background-color: grey;
+}
+/* .header-link { */
+/** font-family don't need here - inherits from body */
+/* font-family: 'Open Sans', sans-serif; */
+
+/** font-style: normaldon't need here - default value*/
+/* font-style: normal; */
+/* font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;  */
+/* change for coefficient line-height: 16px;/font-size: 12px; result 1.33 without (px)*/
+/* letter-spacing: 0.1em;
+
+  color: #ffffff;
 } */
 
-.header-link {
-  background-color: coral;
+/* .header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em; */
+/* text-transform: uppercase; */
+/* inside tel only digits - no need to use text-transform: uppercase; */
+
+/* color: #ffffff;
+} */
+
+/* .header-tel and  .header-link so you can put them together using comma(,) */
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.header-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.hero-link {
 }
