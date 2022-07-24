@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Roboto-500; /* can name whatever R-500*/
+  src: url(../fonts/);
+}
+
+/* Universal selectors
+The CSS universal selector (*) matches elements of any type.
+Selects all elements 
+Universal selectors can be namespaced when using @namespace. This is useful when dealing with documents containing multiple namespaces such as HTML5 with inline SVG or MathML, or XML that mixes multiple vocabularies.
+
+    ns|* - matches all elements in namespace ns
+    *|* - matches all elements
+    |* - matches all elements without any declared namespace
+
+*/
+
+/*Child combinator
+
+The child combinator (>) is placed between two CSS selectors.
+It matches only those elements matched by the second selector
+that are the direct children of elements matched by the first.
+*/
+
+/* List items that are children of the "my-things" list */
+ul.my-things > li {
+  margin: 2em;
+}
+
+/* Syntax
+selector1 > selector2 { style properties } */
+
+/*Examples
+CSS*/
+
+span {
+  background-color: aqua;
+}
+
+div > span {
+  /* (>) first line descendants */
+  background-color: yellow;
+}
+
+/* Descendant combinator */
+
+/*The descendant combinator — typically represented by a single space (" ")
+character — combines two selectors such that elements
+matched by the second selector are selected
+if they have an ancestor (parent, parent's parent, parent's parent's parent, etc)
+element matching the first selector. Selectors that utilize a descendant combinator
+are called descendant selectors.
+
+Syntax
+selector1 selector2 {
+  property declarations
+}
+*/
+
+/*Examples
+CSS*/
+
+li {
+  list-style-type: disc;
+}
+
+li li {
+  /*  (" ") all descendants */
+  list-style-type: circle;
+  color: tomato;
+}
+
+.first-line-child {
+    background-color: yellow;
+}
+
+.first-line-child ul {
+    background-color: pink;
+}
+.first-line-child > ul > li {
+    background-color: green;
+}
+
+/*body {
+  font-family: 'Open Sans', sans-serif;
+  color: blue;
+}*/
+
+p {
+  color: red;
+}
+
+_reeef * {
+  color: brown;
+}
+
+#examples {
+  background-color: aqua;
+}
+
+/*select all links*/
+[href] {
+  color: rgb(164, 11, 134);
+}
+/*
+/* body {
+  /* background-color: rgb(214, 216, 211); */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* } */
+
+/* p {
+  color: teal;
+} */
+
+/* Examples Some common font families  */
+/* .serif {
+  font-family: Times, 'Times New Roman', Georgia, serif;
+} */
+
+/* .sansserif {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+} */
+
+/* .monospace {
+  font-family: 'Lucida Console', Courier, monospace;
+} */
+
+/* .cursive {
+  font-family: cursive;
+} */
+
+/* .fantasy {
+  font-family: fantasy;
+} */
+
+/* .emoji {
+  font-family: emoji;
+}
+
+.math {
+  font-family: math;
+}
+
+.fangsong {
+  font-family: fangsong;
+} */
