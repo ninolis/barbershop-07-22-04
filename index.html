@@ -59,7 +59,7 @@
       <!-- button:submit{textOnButton} OR -->
       <!-- button:s{textOnButton} OR -->
       <!-- btn:s{textOnButton} -->
-      <button type="button" class="header-btn">Online-booking</button>
+      <button type="button" class="header-btn btn">Online-booking</button>
     </header>
 
     <main>
@@ -86,9 +86,9 @@
             >
           </li>
         </ul>
-        <p class="hero-pre-title">A hair salon for men in Kyiv</p>
+        <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
         <h1 class="hero-title">BarberShop</h1>
-        <p class="hero-after-title">
+        <p class="hero-after-title after-title">
           We are experts in trendy men’s haircuts. We work quickly, carefully
           and with style.
         </p>
@@ -115,9 +115,9 @@
             />
           </li>
         </ul>
-        <p class="about-before-title">About</p>
-        <h2 class="about-title">Best Barbershop in your city</h2>
-        <h3 class="about-after-title">
+        <p class="about-pre-title pre-title">About</p>
+        <h2 class="about-title title">Best Barbershop in your city</h2>
+        <h3 class="about-after-title after-title">
           If you want to add more confidence to your image, you should
           definitely visit us.
         </h3>
@@ -130,15 +130,17 @@
         </p>
 
         <!-- btn:s{textOnButton} -->
-        <button type="button" class="about-btn">Online-booking</button>
+        <button type="button" class="about-btn btn">Online-booking</button>
       </section>
 
       <!-- Services and prices section -->
       <!-- section + p{text} + h2{text} + two lists with 4 li each, in each li 2 p{text} -->
       <!-- section>(p{text}+h2{text}+(ul>li*4>p{text}+p{text})+(ul>li*4>p{text}+p{text})) -->
       <section class="prices">
-        <p class="prices-pre-title">Spend your time with the best masters</p>
-        <h2 class="prices-title">Services and prices</h2>
+        <p class="prices-pre-title pre-title">
+          Spend your time with the best masters
+        </p>
+        <h2 class="prices-title title">Services and prices</h2>
         <ul class="prices-list list">
           <li class="prices-item">
             <p class="prices-list-text">Men’s haircut</p>
@@ -180,88 +182,91 @@
         <!-- button:submit{textOnButton} OR -->
         <!-- button:s{textOnButton} OR -->
         <!-- btn:s{textOnButton} -->
-        <button type="button" class="prices-btn">Online-booking</button>
+        <button type="button" class="prices-btn btn">Online-booking</button>
       </section>
 
       <!-- Why people come to us? create 
       section + list with 4 li each, in each li span + sup + p -->
       <!-- section>ul>li*4>p>span{num$}>sup{+}+{ ParagraphText$$} -->
       <!-- section>ul>li*4>span{num$}+sup{+}+p{ParagraphText$$} -->
-      <section>
-        <ul>
-          <li>
+      <!-- Benefits -->
+      <section class="benefits">
+        <ul class="benefits-list list">
+          <li class="benefits-item">
             <span>600</span><sup>+</sup>
-            <p>Satisfied customers per day</p>
+            <p class="benefits-item-text">Satisfied customers per day</p>
           </li>
-          <li>
+          <li class="benefits-item">
             <span>50</span><sup>+</sup>
             <p>Awards for excellent service</p>
           </li>
-          <li>
+          <li class="benefits-item">
             <span>20</span><sup>+</sup>
-            <p>Kyiv’s best barbers</p>
+            <p class="benefits-item-text">Kyiv’s best barbers</p>
           </li>
-          <li>
+          <li class="benefits-item">
             <span>100</span><sup>+</sup>
-            <p>Gifts for regular customers</p>
+            <p class="benefits-item-text">Gifts for regular customers</p>
           </li>
         </ul>
-        <p>Old traditional school</p>
-        <h2>Why people come to us?</h2>
-        <p>
+        <p class="benefits-pre-title pre-title">Old traditional school</p>
+        <h2 class="benefits-title title">Why people come to us?</h2>
+        <p class="benefits-after-title after-title">
           Only good things are said about us. But it's better to see and feel 1
           time than read 10 times.
         </p>
       </section>
 
       <!-- Our barbers  -->
-      <section>
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
+      <section class="barbers">
+        <p class="barbers-pre-title pre-title">
+          For true enjoyers of the atmosphere
+        </p>
+        <h2 class="barbers-title title">Our barbers</h2>
         <!-- ul>li*3>img[src="./img/image.jpg" alt="image" width="370" height="346"]+h3{h3 title}+(p>lorem2)+ul>li*4>{<a href="https://www.">link $</a>} -->
-        <ul>
-          <li>
+        <ul class="barbers-list list">
+          <li class="barbers-item">
             <img
               src="./img/john-smith.jpg"
               alt="John Smith photo"
               width="370"
               height="346"
             />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-            <ul>
+            <h3 class="barbers-item-title">John Smith</h3>
+            <p class="barbers-item-text">Extreme Barber</p>
+            <ul class="list">
               <li><a href="https://www.">Instagram</a></li>
               <li><a href="https://www.">Twitter</a></li>
               <li><a href="https://www.">Facebook</a></li>
               <li><a href="https://www.">LinkendIn</a></li>
             </ul>
           </li>
-          <li>
+          <li class="barbers-item">
             <img
               src="./img/michele-doe.jpg"
               alt="Michele Doe photo"
               width="370"
               height="346"
             />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
-            <ul>
+            <h3 class="barbers-item-title">Michele Doe</h3>
+            <p class="barbers-item-text">Extreme Barber</p>
+            <ul class="list">
               <li><a href="https://www.">Instagram</a></li>
               <li><a href="https://www.">Twitter</a></li>
               <li><a href="https://www.">Facebook</a></li>
               <li><a href="https://www.">LinkendIn</a></li>
             </ul>
           </li>
-          <li>
+          <li class="barbers-item">
             <img
               src="./img/alan-black.jpg"
               alt="Alan Black photo"
               width="370"
               height="346"
             />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-            <ul>
+            <h3 class="barbers-item-title">Alan Black</h3>
+            <p class="barbers-item-text">Extreme Barber</p>
+            <ul class="list">
               <li><a href="https://www.">Instagram</a></li>
               <li><a href="https://www.">Twitter</a></li>
               <li><a href="https://www.">Facebook</a></li>
@@ -270,14 +275,17 @@
           </li>
         </ul>
       </section>
-      <!-- Gallery -->
 
+      <!-- Gallery -->
       <!-- Gallery Portfolio section -->
-      <section>
-        <h2>Portfolio or Gallery</h2>
-        <p>in Latin, "barba" means "beard"</p>
-        <ul>
-          <li>
+      <section class="gallery">
+        <p class="gallery-pre-title pre-title">
+          in Latin, "barba" means "beard"
+        </p>
+        <!-- <h2 hidden>Portfolio or Gallery</h2> -->
+        <h2 class="visually-hidden">Portfolio or Gallery</h2>
+        <ul class="gallery-list list">
+          <li class="gallery-item">
             <img
               src="./img/gallery-img1.jpg"
               alt="image"
@@ -285,7 +293,7 @@
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-item">
             <img
               src="./img/gallery-img2.jpg"
               alt="image"
@@ -293,7 +301,7 @@
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-item">
             <img
               src="./img/gallery-img3.jpg"
               alt="image"
@@ -301,7 +309,7 @@
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-item">
             <img
               src="./img/gallery-img4.jpg"
               alt="image"
